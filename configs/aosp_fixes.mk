@@ -32,3 +32,10 @@ else
 PRODUCT_COPY_FILES += \
     vendor/yaosp/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
+
+# Camera Effects for devices without a vendor partition
+ifneq ($(filter shamu,$(PRODUCT_DEVICE)),)
+PRODUCT_COPY_FILES +=  \
+    vendor/yaosp/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/yaosp/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
