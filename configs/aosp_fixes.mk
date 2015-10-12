@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter nexus_deb nexus_hammerhead nexus_flo nexus_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter nexus_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
