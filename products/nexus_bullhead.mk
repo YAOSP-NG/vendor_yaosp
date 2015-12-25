@@ -12,9 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (nexus_angler,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_angler.mk
-endif
-ifeq (nexus_bullhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
-endif
+# Inherit AOSP device configuration for bullhead
+$(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
+
+# Override AOSP build properties
+PRODUCT_NAME := nexus_bullhead
+PRODUCT_BRAND := google
+PRODUCT_DEVICE := bullhead
+PRODUCT_MODEL := Nexus 5X
+PRODUCT_MANUFACTURER := LGE
+
+# Device Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=bullhead \
+    BUILD_FINGERPRINT=google/bullhead/bullhead:7.0/NRD90M/3085278:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 7.0 NRD90M 3085278 release-keys"
