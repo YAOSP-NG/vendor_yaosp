@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (nexus_angler,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_angler.mk
-endif
-ifeq (nexus_bullhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
-endif
+# Include overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/nexus/overlay/common
+
+# Main Required Packages
+PRODUCT_PACKAGES += \
+    Launcher3 \
+    LiveWallpapersPicker
