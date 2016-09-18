@@ -30,3 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/yaosp/prebuilt/bin/b:system/bin/b \
     vendor/yaosp/prebuilt/bin/bash:system/bin/bash \
     vendor/yaosp/prebuilt/etc/bash/bashrc:system/etc/bash/bashrc
+
+## Don't compile SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
