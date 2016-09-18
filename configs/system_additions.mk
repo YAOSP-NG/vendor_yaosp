@@ -13,13 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/yaosp/configs/system_additions.mk
-
-# Include overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/yaosp/overlay/common
-
-# Main Required Packages
-PRODUCT_PACKAGES += \
-    Launcher3 \
-    LiveWallpapersPicker
+# Security Enhanced Linux
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
