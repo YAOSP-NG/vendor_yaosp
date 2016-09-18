@@ -13,6 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/bin/sysinit:system/bin/sysinit
+
+# Pure-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/etc/init.yaosp.rc:root/init.yaosp.rc
+
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
