@@ -24,3 +24,9 @@ PRODUCT_COPY_FILES += \
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+# Add bash shell
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/bin/b:system/bin/b \
+    vendor/yaosp/prebuilt/bin/bash:system/bin/bash \
+    vendor/yaosp/prebuilt/etc/bash/bashrc:system/etc/bash/bashrc
