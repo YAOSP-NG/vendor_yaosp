@@ -5,3 +5,7 @@
 #############
 # bash support
 /system/bin/bash       -- u:object_r:shell_exec:s0
+
+#############
+# Superuser's control sockets
+/dev/socket/su-daemon(/.*)?   u:object_r:superuser_device:s0
