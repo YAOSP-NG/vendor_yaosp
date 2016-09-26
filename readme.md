@@ -1,1 +1,1 @@
-PureNexus Project Vendor
+Custom vendor stuff
