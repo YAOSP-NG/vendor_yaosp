@@ -15,6 +15,13 @@
 
 include vendor/yaosp/configs/system_additions.mk
 
+# Add YAOSP version as build prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.yaosp.version=0.00 \
+    ro.yaosp.branch=7.0.0_r6 \
+    ro.yaosp.buildbase=NRD90U \
+    ro.yaosp.builddate=2016-09-30
+
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/yaosp/overlay/common
