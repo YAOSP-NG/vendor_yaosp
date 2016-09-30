@@ -1,0 +1,138 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+YAOSP-NG Changelog 0.00 - 30/09/2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Based on AOSP 7.0.0_r6 NRD90U (synced on 20160916 2345 CET)
+
+Settings
+--------
+  - About device : show hardware and processor info
+  - About device : show SELinux state in Settings About
+  - SystemUI Tuner : always show
+  - SystemUI Tuner - Status bar : fix battery % not sticking
+  - SystemUI Tuner - Status bar : fix clock show seconds not sticking
+  - SystemUI Tuner - Night mode : fix on/off not always working
+  - SystemUI Tuner - Night mode : improve UX for tint/brightness "at least one enabled"
+
+Phone
+-----
+  - 
+
+DeskClock
+---------
+  - 
+
+Features
+--------
+  - All added features are completely translated into french
+  - All added features are completely translated into german
+  - gapps patches
+  - Keep Google services enabled to avoid excessive wakeups during screen off
+  - various SELinux fixes
+  - system update disabled
+  - icons updated to material design (might still have missed some...)
+  - disable AOSP recovery overwriting on boot
+  - ad-blocking hosts file (2016-02-08)
+  - updated apns-config
+  - use Nexus audio files
+  - personalized YAOSP boot animation
+  - added busybox
+
+Flasher ZIP
+-----------
+  - remove date assert
+  - unmount /system before flashing update if /system is mounted
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Angler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Angler
+---------------
+  - based on android-msm-angler-3.10-nougat/android-7.0.0_r0.18
+  - XZ kernel compression
+  - /proc/config.gz support
+  - Westwood TCP congestion control default
+  - KCAL support
+  - LiveDisplay support
+  - FIOPS I/O scheduler
+  - fix keyring related exploits (CVE-2015-7550 & CVE-2016-0728)
+  - fix fs/pipe.c related exploit (CVE-2015-1805)
+  - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
+  - add exfat 1.2.19 sources (Samsung ORSC G930FXXU1APAW sourcedrop)
+  - add ntfs read/write support
+  - msm_hotplug driver v2.4 (v2+ by Yank555.lu)
+
+Device - Angler
+---------------
+  - enable doze power saving mode
+  - Make encryption optional in fstab
+  - revert dm-verity
+  - use new 3gb dalvik heap and hwui
+  - add functionality to enable/disable double-tap wake gesture in Display Settings
+  - increase swap to 1Gb
+  - default to fiops I/O scheduler / 1024Kb readahead buffer
+  - add vendor overlay for CarrierConfig (Thx to Beanstown)
+     (this could fix carrier specific issues, like WiFi calling etc.)
+  - disabled userspace touchboost
+  - setup in-kernel touchboost in a more moderate way
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Bullhead
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Bullhead
+-----------------
+  - 
+  
+Device - Bullhead
+-----------------
+  - 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Shamu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Shamu
+--------------
+  - 
+
+Device - Shamu
+--------------
+  - 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Hammerhead
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Hammerhead
+-------------------
+  - 
+
+Device - Hammerhead
+-------------------
+  - 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Flounder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Flounder
+-----------------
+  - 
+
+Device - Flounder
+-----------------
+  - 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Device specific changes - Flo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kernel - Flo
+------------
+  - 
+
+Device - Flo
+------------
+  - 

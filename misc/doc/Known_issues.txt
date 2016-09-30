@@ -1,0 +1,20 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+YAOSP-NG Known Issues as of 18/09/2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Severe (causing crashes or reboots)
+-----------------------------------
+
+- none
+
+
+Normal priority (stuff we can live with for now)
+------------------------------------------------
+
+- none
+
+
+Low priority (like design glitches...)
+--------------------------------------
+
+- none
