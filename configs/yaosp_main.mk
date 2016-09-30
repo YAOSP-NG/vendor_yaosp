@@ -23,3 +23,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker
+
+# Build Busybox
+PRODUCT_PACKAGES += \
+    Busybox
