@@ -16,6 +16,14 @@
 include vendor/yaosp/configs/aosp_fixes.mk
 include vendor/yaosp/configs/yaosp_main.mk
 
+# Use global common APN list
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Selective SPN list for operator number who has the problem.
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/etc/spn-conf.xml:system/etc/spn-conf.xml
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     Stk \
