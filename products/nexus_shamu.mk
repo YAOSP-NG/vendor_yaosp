@@ -30,3 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:7.0/NRD90M/3085278:user/release-keys \
     PRIVATE_BUILD_DESC="shamu-user 7.0 NRD90M 3085278 release-keys"
+
+# Addtional backup tools for dirty flash
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/generic/addon.d/71-layers.sh:system/addon.d/71-layers.sh \
+    vendor/nexus/prebuilt/generic/addon.d/91-font.sh:system/addon.d/91-font.sh
