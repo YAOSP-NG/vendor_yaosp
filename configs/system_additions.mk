@@ -29,3 +29,6 @@ PRODUCT_COPY_FILES += \
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+# Don't compile SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
