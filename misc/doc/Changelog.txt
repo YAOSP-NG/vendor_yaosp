@@ -2,7 +2,7 @@
 YAOSP-NG Changelog 0.00 - 30/09/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on AOSP 7.0.0_r6 NRD90U (synced on 20160916 2345 CET)
+Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
 
 Settings
 --------
@@ -104,7 +104,7 @@ Device - Bullhead
   - default to fiops I/O scheduler / 1024Kb readahead buffer
   - consider charging fast above 1300mA/h instead of 1500mA/h
   - add vendor overlay for CarrierConfig (Thx to Beanstown)
-     (this could fix carrier specific issues, like WiFi calling etc.)
+    (this could fix carrier specific issues, like WiFi calling etc.)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Shamu
@@ -112,11 +112,59 @@ Device specific changes - Shamu
 
 Kernel - Shamu
 --------------
-  - 
+  - based on android-msm-shamu-3.10-nougat-mr0.5/android-7.0.0_r0.24
+  - XZ kernel compression
+  - /proc/config.gz support
+  - Westwood TCP congestion control default
+  - Powersuspend v1.7 (faux123 / Yank555.lu)
+  - IntelliPlug v4.0 (faux123)
+  - IntelliThermal (faux123)
+  - FauxSound v3.6 (faux123)
+  - Async fsync by htc (through faux123 / imoseyon)
+  - KCAL support (via imoseyon)
+  - LiveDisplay support (via imoseyon)
+  - FIOPS I/O scheduler (port by faux123)
+  - exfat support (through Samsung)
+  - Yankactive governor (Yank555.lu)
+  - virbrator control (imoseyon)
+  - simple GPU algorithm (faux123)
+  - enable all 5GHz channels (Yank555.lu)
+  - fastcharge (faux123)
+  - zswap support (faux123)
+  - CPU Hardlimit v2.2 (Yank555.lu)
+  - Adreno idler (Park Ju Hyung aka. arter97)
+  - kexec hardboot support (aka. Multi-ROM)
+  - fix keyring related exploits (CVE-2015-7550 & CVE-2016-0728)
+  - fix TMO WiFi calling
+  - fix fs/pipe.c related exploit (CVE-2015-1805)
+  - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
 
 Device - Shamu
 --------------
-  - 
+  - enable doze power saving mode
+  - Make encryption optional in fstab
+  - revert dm-verity
+  - use new 3gb dalvik heap and hwui
+  - add functionality to enable/disable double-tap wake gesture in Display Settings
+  - Setup Yank555.lu kernel
+      - Enable Simple GPU algorithm
+      - Configure cpufreq Hardlimit driver
+          - Screen on  CPU min/max : 300MHz / 2.7GHz
+          - Screen off CPU min/max : 300MHz / 1.5GHz
+          - Wakeup kick            : 2.0GHz for 3 secs
+          - Touchboost lo/hi       : 1.2GHz / 1.5GHz
+          -     duration/switch    : 1 sec  / 4 touches for lo -> hi
+          - DVFS userspace lockout : ignore
+      - Setup CPU governor
+      - IntelliPlug (mpdecision disabled)
+      - IntelliThermal (thermal-engine disabled)
+      - Vibrator strength set to 63% (as compared to 100% stock)
+      - Display set to calibrated 6500K color temperature
+      - fiops I/O scheduler / 1024Kb readahead buffer
+      - 1Gb zswap
+  - disable Qualcomm's battery current limit hack
+    (avoids putting device to dualcore on 36° temp or unstable battery current, nice idea
+     but didn't help with the shutdown issues at all, just crippled performance)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Hammerhead
