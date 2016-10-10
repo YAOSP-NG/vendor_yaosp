@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Known Issues as of 18/09/2016
+YAOSP-NG Known Issues as of 10/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Severe (causing crashes or reboots)
@@ -17,4 +17,5 @@ Normal priority (stuff we can live with for now)
 Low priority (like design glitches...)
 --------------------------------------
 
-- none
+- Bluetooth shows disconnected if reenabled in airplane mode, but works
+  (Statusbar, QS and Settings)
