@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/yaosp/prebuilt/etc/init.yaosp.rc:root/init.yaosp.rc
 
+# prebuilt su binary script support
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/xbin/su:system/xbin/su
+
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
