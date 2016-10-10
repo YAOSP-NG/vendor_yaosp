@@ -22,6 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.yaosp.buildbase=NRD90U \
     ro.yaosp.builddate=2016-09-30
 
+# Use ad-blocking hosts file
+PRODUCT_COPY_FILES += \
+    vendor/yaosp/prebuilt/etc/hosts:system/etc/hosts
+
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/yaosp/overlay/common
