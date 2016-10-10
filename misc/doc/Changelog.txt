@@ -37,6 +37,8 @@ Features
   - use Nexus audio files
   - personalized YAOSP boot animation
   - added busybox
+  - support more webview packages than just AOSP
+    (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
 
 Flasher ZIP
 -----------
