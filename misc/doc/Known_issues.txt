@@ -19,3 +19,4 @@ Low priority (like design glitches...)
 
 - Bluetooth shows disconnected if reenabled in airplane mode, but works
   (Statusbar, QS and Settings)
+- Split screen recents swipe up action only works after at least one screen rotation
