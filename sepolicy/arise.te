@@ -1,0 +1,30 @@
+# rules for arise sound mod
+type arise, domain;
+
+# log file type
+type arise_log_file, file_type;
+
+# avoid neverallowed write to system_data_file
+file_type_auto_trans(arise, system_data_file, arise_log_file)
+
+set_prop(arise, default_prop)
+set_prop(arise, system_prop)
+set_prop(arise, audio_prop)
+set_prop(arise, config_prop)
+set_prop(arise, bluetooth_prop)
+allow arise devpts:chr_file ioctl;
+
+# get access to the log
+allow arise arise_log_file:file rw_file_perms;
+
+# execute setprop in /system/su.d
+allow arise system_file:file rx_file_perms;
+
+# execute shell
+allow arise shell_exec:file rx_file_perms;
+
+# execute toolbox/toybox
+allow arise toolbox_exec:file rx_file_perms;
+
+# allow access to the files by other domains
+allow domain arise_log_file:file r_file_perms;
