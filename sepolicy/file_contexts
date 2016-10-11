@@ -5,3 +5,7 @@
 #############
 # bash support
 /system/bin/bash       -- u:object_r:shell_exec:s0
+
+#############
+# arise sound mod support
+/data/local/arisesound_setprop_run\.log   u:object_r:arise_log_file:s0
