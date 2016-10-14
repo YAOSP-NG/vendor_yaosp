@@ -1,0 +1,2 @@
+# Add OMS-n support
+type overlay_service, app_api_service, system_server_service, service_manager_type;
