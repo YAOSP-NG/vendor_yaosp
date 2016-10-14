@@ -1,0 +1,2 @@
+# Add OMS-n support
+allow system_server overlay_service:service_manager find;
