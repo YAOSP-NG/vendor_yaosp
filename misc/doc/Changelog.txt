@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.01 - 11/10/2016
+YAOSP-NG Changelog 0.02 - 14/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -42,6 +42,8 @@ Features
   - include phh superuser in /system/xbin/su for better support of root apps
       install the phh superuser app from Playstore !
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
+  - OMS/Substratum support
+  - arise/v4a support in SELinux enforcing mode (you need to flash the mod)
 
 Flasher ZIP
 -----------
