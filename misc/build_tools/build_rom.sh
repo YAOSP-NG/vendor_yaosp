@@ -45,8 +45,7 @@ make -j `getconf _NPROCESSORS_ONLN` dist
 
 echo "Started  : $start_time"
 echo "Finished : `date +'%d/%m/%y %H:%M:%S'`"
-
-AOSP_TARGET_PACKAGE="out/target/product/$1/YAOSP-$1-`grep ro.build.version.release= out/target/product/$1/system/build.prop | awk -F= '{print $2;}'`-`grep ro.build.id= out/target/product/$1/system/build.prop | awk -F= '{print $2;}'`-`date +'%Y%m%d'`.zip"
+AOSP_TARGET_PACKAGE="out/target/product/$1/YAOSP-v`grep ro.yaosp.version= out/target/product/$1/system/build.prop | awk -F= '{print $2;}'`-$1-`grep ro.build.version.release= out/target/product/$1/system/build.prop | awk -F= '{print $2;}'`-`grep ro.build.id= out/target/product/$1/system/build.prop | awk -F= '{print $2;}'`-`date +'%Y%m%d-%H%M%S'`.zip"
 
 if [ -e out/dist/aosp_$1-ota-eng.$USER.zip ]; then
 
