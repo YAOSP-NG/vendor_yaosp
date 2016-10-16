@@ -32,3 +32,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
+
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
