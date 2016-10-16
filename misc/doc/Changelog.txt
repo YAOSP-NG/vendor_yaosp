@@ -1,18 +1,31 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.02 - 14/10/2016
+YAOSP-NG Changelog 0.03 - 16/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
 
 Settings
 --------
-  - About device : show hardware and processor info
-  - About device : show SELinux state in Settings About
+  - Display - Font size : allow settings size in 5% steps from 80% to 130%
+  - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
+  - Apps : add fastscroll (scrollbar) to application list
+  - Apps - Application Info : show package name
+  - Apps - Application Info : open app when clicking on icon
+  - Battery - Battery Saver : add additional steps (10%, 20%, 25%)
+  - Developer options - Webview : support more webview packages than just AOSP
+    (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
+  - Developer options - Window animation scale : set between 0x and 10x in 0.1 steps
+  - Developer options - Transition animation scale : set between 0x and 10x in 0.1 steps
+  - Developer options - Animator duration scale : set between 0x and 10x in 0.1 steps
   - SystemUI Tuner : always show
   - SystemUI Tuner - Status bar : fix battery % not sticking
   - SystemUI Tuner - Status bar : fix clock show seconds not sticking
   - SystemUI Tuner - Night mode : fix on/off not always working
   - SystemUI Tuner - Night mode : improve UX for tint/brightness "at least one enabled"
+  - About phone : show hardware and processor info
+  - About phone : show memory info
+  - About phone : show current vendor info (for devices with vendor partition)
+  - About phone : show SELinux state in Settings About
 
 Phone
 -----
@@ -37,8 +50,6 @@ Features
   - use Nexus audio files
   - personalized YAOSP boot animation
   - added busybox
-  - support more webview packages than just AOSP
-    (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
   - include phh superuser in /system/xbin/su for better support of root apps
       install the phh superuser app from Playstore !
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
