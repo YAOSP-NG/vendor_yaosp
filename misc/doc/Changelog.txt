@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.03 - 16/10/2016
+YAOSP-NG Changelog 0.04 - 17/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -12,6 +12,9 @@ Settings
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
   - Battery - Battery Saver : add additional steps (10%, 20%, 25%)
+  - Language & input - PowerMenu : customize global menu
+                                   (power, reboot, screenshot, screenrecord, torch, airplane,
+                                    users, settings, lockdown, assist, voiceassist, silent   )
   - Developer options - Webview : support more webview packages than just AOSP
     (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
   - Developer options - Window animation scale : set between 0x and 10x in 0.1 steps
@@ -55,6 +58,12 @@ Features
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
   - OMS/Substratum support
   - arise/v4a support in SELinux enforcing mode (you need to flash the mod)
+  - smooth spinners in non holo apps
+  - don't refresh UI when screen is off
+  - smoother up/download icon animation
+  - remove unnecessary media files
+  - clock and date clickable in notification shade
+  - improve scrolling cache
 
 Flasher ZIP
 -----------
