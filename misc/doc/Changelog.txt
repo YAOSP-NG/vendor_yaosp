@@ -1,11 +1,12 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.04 - 17/10/2016
+YAOSP-NG Changelog 0.05 - 18/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
 
 Settings
 --------
+  - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
   - Apps : add fastscroll (scrollbar) to application list
