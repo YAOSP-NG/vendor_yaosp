@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.05 - 18/10/2016
+YAOSP-NG Changelog 0.06 - 19/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -7,12 +7,15 @@ Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
 Settings
 --------
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
+  - Display - Double tap to wake : on doze pulse
+  - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
   - Apps : add fastscroll (scrollbar) to application list
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
   - Battery - Battery Saver : add additional steps (10%, 20%, 25%)
+  - Security : Quick unlock (only works for 4-digit PINs to avoid lockout)
   - Language & input - PowerMenu : customize global menu
                                    (power, reboot, screenshot, screenrecord, torch, airplane,
                                     users, settings, lockdown, assist, voiceassist, silent   )
