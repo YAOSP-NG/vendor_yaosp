@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.06 - 19/10/2016
+YAOSP-NG Changelog 0.07 - 21/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -11,6 +11,7 @@ Settings
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
+  - Display : Expanded Desktop
   - Apps : add fastscroll (scrollbar) to application list
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
@@ -68,6 +69,7 @@ Features
   - remove unnecessary media files
   - clock and date clickable in notification shade
   - improve scrolling cache
+  - fix 2 errors while flashing
 
 Flasher ZIP
 -----------
