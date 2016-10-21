@@ -17,10 +17,10 @@ include vendor/yaosp/configs/system_additions.mk
 
 # Add YAOSP version as build prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.yaosp.version=0.06 \
+    ro.yaosp.version=0.07 \
     ro.yaosp.branch=7.0.0_r14 \
     ro.yaosp.buildbase=NBD90Z \
-    ro.yaosp.builddate=2016-10-19
+    ro.yaosp.builddate=2016-10-21
 
 # Use ad-blocking hosts file
 PRODUCT_COPY_FILES += \
