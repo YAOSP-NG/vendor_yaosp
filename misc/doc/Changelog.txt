@@ -1,17 +1,19 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.07 - 21/10/2016
+YAOSP-NG Changelog 0.08 - 23/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
 
 Settings
 --------
+  - More : statusbar network indicators
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Double tap to wake : on doze pulse
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
   - Display : Expanded Desktop
+  - Display : toggle to wake device when charger is un-/plugged
   - Apps : add fastscroll (scrollbar) to application list
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
@@ -47,6 +49,8 @@ Features
 --------
   - All added features are completely translated into french
   - All added features are completely translated into german
+  - All added features are completely translated into russian (Victor Lapin)
+  - Settings features are completely translated into hungarian (Gondos Lehel)
   - gapps patches
   - Keep Google services enabled to avoid excessive wakeups during screen off
   - various SELinux fixes
