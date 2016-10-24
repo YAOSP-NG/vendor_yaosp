@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.08 - 23/10/2016
+YAOSP-NG Changelog 0.09 - 24/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -8,12 +8,14 @@ Settings
 --------
   - More : statusbar network indicators
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
-  - Display - Double tap to wake : on doze pulse
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
   - Display : Expanded Desktop
   - Display : toggle to wake device when charger is un-/plugged
+  - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze)
+  - Sound - Other sounds : Charging sounds (fixed)
+  - Sound - Other sounds : Charging vibration
   - Apps : add fastscroll (scrollbar) to application list
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
