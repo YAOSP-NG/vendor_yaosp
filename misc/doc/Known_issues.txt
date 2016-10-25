@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Known Issues as of 10/10/2016
+YAOSP-NG Known Issues as of 25/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Severe (causing crashes or reboots)
@@ -20,3 +20,5 @@ Low priority (like design glitches...)
 - Bluetooth shows disconnected if reenabled in airplane mode, but works
   (Statusbar, QS and Settings)
 - Split screen recents swipe up action only works after at least one screen rotation
+- i/o scheduler settings on boot does not work (SELinux ?)
+- shamu: dt2w switch has no effect (dt2w can be switch in kernel adiutor, though)
