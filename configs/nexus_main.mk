@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker
 
-# Busybox
+# Custom
 PRODUCT_PACKAGES += \
-    Busybox
+    Busybox \
+    masquerade
