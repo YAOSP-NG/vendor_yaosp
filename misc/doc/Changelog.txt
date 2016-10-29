@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.09 - 24/10/2016
+YAOSP-NG Changelog 0.10 - 29/10/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -24,6 +24,10 @@ Settings
   - Language & input - PowerMenu : customize global menu
                                    (power, reboot, screenshot, screenrecord, torch, airplane,
                                     users, settings, lockdown, assist, voiceassist, silent   )
+  - Date & time : show/hide clock (moved from SystemUI tuner)
+  - Date & time : show/hide seconds (moved from SystemUI tuner)
+  - Date & time : override clock color
+  - Date & time : full clock customizations (right/center/left clock, date ...)
   - Developer options - Webview : support more webview packages than just AOSP
     (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
   - Developer options - Window animation scale : set between 0x and 10x in 0.1 steps
