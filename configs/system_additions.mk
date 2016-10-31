@@ -13,9 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# init.d script support
+# init.d and arise sound mod script support
 PRODUCT_COPY_FILES += \
-    vendor/yaosp/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/yaosp/prebuilt/bin/sysinit:system/bin/sysinit \
+    vendor/yaosp/prebuilt/bin/ariseinit:system/bin/ariseinit
 
 # Pure-specific init file
 PRODUCT_COPY_FILES += \
