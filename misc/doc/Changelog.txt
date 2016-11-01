@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.11 - 31/10/2016
+YAOSP-NG Changelog 0.11 - 01/11/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -108,7 +108,6 @@ Kernel - Angler
   - /proc/config.gz support
   - Westwood TCP congestion control default
   - KCAL support
-  - LiveDisplay support
   - FIOPS I/O scheduler
   - fix keyring related exploits (CVE-2015-7550 & CVE-2016-0728)
   - fix fs/pipe.c related exploit (CVE-2015-1805)
@@ -137,7 +136,7 @@ Device specific changes - Bullhead
 
 Kernel - Bullhead
 -----------------
-  - based on android-msm-bullhead-3.10-nougat/android-7.0.0_r0.17
+  - based on android-msm-bullhead-3.10-nougat-mr0.5/android-7.0.0_r0.23
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -148,6 +147,8 @@ Kernel - Bullhead
   - msm_hotplug driver v2.4 (v2+ by Yank555.lu)
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
   - fingerprint unlock boost (Thx to Francisco Franco)
+  - fix dirtycow (CVE-2016-5195)
+  - lz4 as default zram compressor
   
 Device - Bullhead
 -----------------
