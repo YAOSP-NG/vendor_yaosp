@@ -41,7 +41,7 @@ echo "--------------------------------------------------------------------------
 echo "Building AOSP for $1"
 echo "-----------------------------------------------------------------------------"
 
-make -j `getconf _NPROCESSORS_ONLN` dist
+make -j`getconf _NPROCESSORS_ONLN` dist
 
 echo "Started  : $start_time"
 echo "Finished : `date +'%d/%m/%y %H:%M:%S'`"
