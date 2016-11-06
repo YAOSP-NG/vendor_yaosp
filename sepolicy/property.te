@@ -1,0 +1,2 @@
+# allow adb related properties to be set
+type adbtcp_prop, property_type;
