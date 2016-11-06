@@ -152,6 +152,10 @@ Kernel - Bullhead
   - msm_hotplug driver v2.4 (v2+ by Yank555.lu)
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
   - fingerprint unlock boost (Thx to Francisco Franco)
+  - fix dirtycow (CVE-2016-5195)
+  - lz4 as default zram compressor
+  - add ARM64 CRC32 hw accelerated module
+  - use high priority workqueue for devfreq
   
 Device - Bullhead
 -----------------
