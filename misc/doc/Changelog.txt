@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.11 - 01/11/2016
+YAOSP-NG Changelog 0.12 - 07/11/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r14 NBD90Z (synced on 20161006 1623 CET)
@@ -26,7 +26,7 @@ Settings
   - Apps - Application Info : open app when clicking on icon
   - Battery - Battery Saver : add additional steps (10%, 20%, 25%)
   - Security : Quick unlock (only works for 4-digit PINs to avoid lockout)
-  - Security : Show/hide negociated charging current and voltage on lockscreen
+  - Security : Show/hide battery info on lockscreen when charging (current, voltage and temperature)
   - Language & input - PowerMenu : customize global menu
                                    (power, reboot, screenshot, screenrecord, torch, airplane,
                                     users, settings, lockdown, assist, voiceassist, silent   )
@@ -36,9 +36,13 @@ Settings
   - Date & time : full clock customizations (right/center/left clock, date ...)
   - Developer options - Webview : support more webview packages than just AOSP
     (Chrome Stable, Chrome Beta, Chrome Dev, Chrome Canary, Google WebView, AOSP)
+  - Developer options : switch to enabled/disable ADB over Network
+  - Developer options : toggle Android debugging notification
   - Developer options - Window animation scale : set between 0x and 10x in 0.1 steps
   - Developer options - Transition animation scale : set between 0x and 10x in 0.1 steps
   - Developer options - Animator duration scale : set between 0x and 10x in 0.1 steps
+  - Developer options : Long press back to kill foreground app
+  - Developer options : customize device hostname
   - SystemUI Tuner : always show
   - SystemUI Tuner - Status bar : fix battery % not sticking
   - SystemUI Tuner - Status bar : fix clock show seconds not sticking
@@ -55,10 +59,6 @@ Phone
   - Settings : Reverse number lookup
   - Settings - Calls : Flip to Mute/Reject Call
   - Settings - Calls : Proximity speaker
-
-DeskClock
----------
-  - 
 
 Features
 --------
@@ -91,6 +91,11 @@ Features
   - fix 2 errors while flashing
   - show icon of package associated with Toast
   - battery-light : only show full when battery is done charging (instead of at 90%)
+  - DeskClock removed from build, use the one from PlayStore
+  - added QS tiles (Ambient Display, Sync, Music, ADB over network, USB tether, Screenshot,
+                    Caffeine, Brightness, Reboot/Recovery, IME selector, Sound, 3-way DND,
+                    Expanded desktop)
+  - added QS tile option for 3,4,5 tiles per row
 
 Flasher ZIP
 -----------
@@ -129,6 +134,7 @@ Device - Angler
      (this could fix carrier specific issues, like WiFi calling etc.)
   - disabled userspace touchboost
   - setup in-kernel touchboost in a more moderate way
+  - fix dirtycow (CVE-2016-5195)
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Bullhead
@@ -195,6 +201,7 @@ Kernel - Shamu
   - fix TMO WiFi calling
   - fix fs/pipe.c related exploit (CVE-2015-1805)
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
+  - fix dirtycow (CVE-2016-5195)
 
 Device - Shamu
 --------------
