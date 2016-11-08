@@ -28,8 +28,8 @@ PRODUCT_MANUFACTURER := Huawei
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:7.0/NBD90X/3254009:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 7.0 NBD90X 3254009 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:7.0/NBD91K/3318877:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 7.0 NBD91K 3318877 release-keys"
 
 # Addtional backup tools for dirty flash
 PRODUCT_COPY_FILES += \
