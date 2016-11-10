@@ -155,11 +155,10 @@ Kernel - Bullhead
   - touchboost controls
   - msm_hotplug driver v2.4 (v2+ by Yank555.lu)
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
-  - fingerprint unlock boost (Thx to Francisco Franco)
   - fix dirtycow (CVE-2016-5195)
   - lz4 as default zram compressor
   - add ARM64 CRC32 hw accelerated module
-  - use high priority workqueue for devfreq
+  - use high priority workqueue for devfreq and synaptics
   
 Device - Bullhead
 -----------------
@@ -171,6 +170,7 @@ Device - Bullhead
   - consider charging fast above 1300mA/h instead of 1500mA/h
   - add vendor overlay for CarrierConfig (Thx to Beanstown)
     (this could fix carrier specific issues, like WiFi calling etc.)
+  - enable EIS for video recording
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Shamu
