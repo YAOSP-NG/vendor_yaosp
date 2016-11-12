@@ -12,15 +12,17 @@ if [ "$1" != "" ]; then
   if [ "$2" != "" ]; then
     cd $src_pwd
     tar cvf external_busybox.tar external/busybox
-    tar cvf external_exfat.tar external/exfat
-    tar cvf external_fuse.tar external/fuse
-    tar cvf external_ntfs-3g.tar external/ntfs-3g
-    tar cvf frameworks_opt_cards.tar frameworks/opt/cards
+#    tar cvf external_exfat.tar external/exfat
+#    tar cvf external_fuse.tar external/fuse
+#    tar cvf external_ntfs-3g.tar external/ntfs-3g
+#    tar cvf frameworks_opt_cards.tar frameworks/opt/cards
     tar cvf kernel.tar kernel
     tar cvf manifest.tar manifest
-    tar cvf system_extras_su.tar system/extras/su
+    tar cvf packages_apps_masquerade.tar packages/apps/masquerade
+    tar cvf prebuilts_gcc_linux-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+    tar cvf prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8
+#    tar cvf system_extras_su.tar system/extras/su
     tar cvf vendor.tar vendor
-    tar cvf yaosp.tar yaosp
     mv $src_pwd/*.tar $dst_pwd
     cp $src_pwd/build_rom.sh $dst_pwd
     echo " "
