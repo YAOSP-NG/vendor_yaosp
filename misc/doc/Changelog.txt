@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.20 - 11/11/2016
+YAOSP-NG Changelog 0.21 - 14/11/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r19 NBD91P (synced on 20161111 11:06 CET)
@@ -80,7 +80,7 @@ Features
   - include phh superuser in /system/xbin/su for better support of root apps
       install the phh superuser app from Playstore !
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
-  - OMS/Substratum support updated to OMS7-N
+  - OMS/Substratum support updated to OMS7-N / masquerade updated to release 15
   - arise/v4a support in SELinux enforcing mode (you need to flash the mod)
   - smooth spinners in non holo apps
   - don't refresh UI when screen is off
