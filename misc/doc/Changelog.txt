@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.21 - 14/11/2016
+YAOSP-NG Changelog 0.22 - 20/11/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r19 NBD91P (synced on 20161111 11:06 CET)
@@ -14,6 +14,7 @@ Settings
   - Display - Display size : allow adjusting screen density to smaller sizes and add more steps
   - Display : Expanded Desktop
   - Display : toggle to wake device when charger is un-/plugged
+  - Display : toggle to prevent accidental wakeup when pressing the power button (aka. Proxiwake)
   - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze)
   - Notifications - Settings menu icon : notification light (per-app)
   - Notifications - Settings menu icon : battery light (separate color for slow/fast charging)
