@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.25 - 22/11/2016
+YAOSP-NG Changelog 0.26 - 27/11/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r21 N5D91L (synced on 20161120 19:08 CET)
@@ -49,6 +49,7 @@ Settings
   - SystemUI Tuner - Status bar : fix clock show seconds not sticking
   - SystemUI Tuner - Night mode : fix on/off not always working
   - SystemUI Tuner - Night mode : improve UX for tint/brightness "at least one enabled"
+  - SystemUI Tuner - Navigation bar : added more buttons (power, menu big, ime left/right, Search)
   - About phone : show hardware and processor info
   - About phone : show memory info
   - About phone : show current vendor info (for devices with vendor partition)
@@ -101,6 +102,7 @@ Features
   - frameworks_av optimizations
   - packageinstaller : show current and new version (may be overwritten by gapps)
   - art, bionic, external_skia optimizations
+  - Batterystats: never show unnacounted and over-counted
 
 Flasher ZIP
 -----------
