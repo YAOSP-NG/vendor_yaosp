@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/pure/configs/aosp_fixes.mk
-include vendor/pure/configs/bootanimation.mk
-include vendor/pure/configs/pure_main.mk
-include vendor/pure/configs/system_additions.mk
-include vendor/pure/configs/version.mk
+include vendor/nexus/configs/aosp_fixes.mk
+include vendor/nexus/configs/bootanimation.mk
+include vendor/nexus/configs/pure_main.mk
+include vendor/nexus/configs/system_additions.mk
+include vendor/nexus/configs/version.mk
 
 # Telephony packages
 PRODUCT_PACKAGES += \

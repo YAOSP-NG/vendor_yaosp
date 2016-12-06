@@ -14,17 +14,17 @@
 
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/pure/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
 
 # Pure-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/pure/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+    vendor/nexus/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/pure/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/pure/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/pure/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/nexus/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/nexus/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \

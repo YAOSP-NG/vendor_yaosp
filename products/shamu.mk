@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Include pure telephony configuration
-include vendor/pure/configs/pure_phone.mk
+include vendor/nexus/configs/pure_phone.mk
 
 # Inherit AOSP device configuration for shamu.
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)

@@ -14,7 +14,7 @@
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/pure/overlay/common
+    vendor/nexus/overlay/common
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
