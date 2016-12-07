@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.26 - 27/11/2016
+YAOSP-NG Changelog 0.27 - 07/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.0.0_r21 N5D91L (synced on 20161120 19:08 CET)
@@ -126,6 +126,11 @@ Kernel - Angler
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
   - add exfat 1.2.19 sources (Samsung ORSC G930FXXU1APAW sourcedrop)
   - add ntfs read/write support
+  - update kgsl
+  - kgsl: convert some workqueues to use kthreads
+  - use high priority workqueue for devfreq and synaptics
+  - add system wide power efficient workqueues
+  - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
 
 Device - Angler
 ---------------
@@ -141,7 +146,8 @@ Device - Angler
   - setup in-kernel touchboost in a more moderate way
   - fix dirtycow (CVE-2016-5195)
   - consider charging fast above 1300mA/h instead of 1500mA/h
-  
+  - add WiFi Display and Miracast support
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Bullhead
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,7 +167,11 @@ Kernel - Bullhead
   - lz4 as default zram compressor
   - add ARM64 CRC32 hw accelerated module
   - use high priority workqueue for devfreq and synaptics
-  
+  - add system wide power efficient workqueues
+  - kgsl: convert some workqueues to use kthreads
+  - mdss: move vsync_retire_work_handler to kthread
+  - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
+
 Device - Bullhead
 -----------------
   - enable doze power saving mode
@@ -173,6 +183,7 @@ Device - Bullhead
   - add vendor overlay for CarrierConfig (Thx to Beanstown)
     (this could fix carrier specific issues, like WiFi calling etc.)
   - enable EIS for video recording
+  - add WiFi Display and Miracast support
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Shamu
