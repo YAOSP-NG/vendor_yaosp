@@ -17,8 +17,8 @@ ifndef PURE_BUILD_TYPE
     PURE_BUILD_TYPE := HOMEMADE
 endif
 
-PURE_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
+ABC_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.pure.version=$(PURE_VERSION)
+    ro.abc.version=$(ABC_VERSION)
 
