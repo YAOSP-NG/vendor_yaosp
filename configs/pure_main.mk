@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 # Custom Packages
 PRODUCT_PACKAGES += \
     Busybox \
-    Masquerade
+    masquerade
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
