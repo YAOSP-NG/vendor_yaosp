@@ -25,3 +25,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox \
     Masquerade
+
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
