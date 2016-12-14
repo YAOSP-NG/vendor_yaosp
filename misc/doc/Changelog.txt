@@ -1,8 +1,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.27 - 07/12/2016
+YAOSP-NG Changelog 0.50 - 10/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on AOSP 7.0.0_r21 N5D91L (synced on 20161120 19:08 CET)
+Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
 
 Settings
 --------
@@ -115,7 +115,7 @@ Device specific changes - Angler
 
 Kernel - Angler
 ---------------
-  - based on android-msm-angler-3.10-nougat-mr0.5/android-7.0.0_r0.38
+  - based on android-msm-angler-3.10-nougat-mr1/android-7.1.1_r0.3
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -143,6 +143,7 @@ Device - Angler
   - default to fiops I/O scheduler / 1024Kb readahead buffer
   - add vendor overlay for CarrierConfig (Thx to Beanstown)
      (this could fix carrier specific issues, like WiFi calling etc.)
+  - disabled userspace touchboost
   - setup in-kernel touchboost in a more moderate way
   - fix dirtycow (CVE-2016-5195)
   - consider charging fast above 1300mA/h instead of 1500mA/h
@@ -154,7 +155,7 @@ Device specific changes - Bullhead
 
 Kernel - Bullhead
 -----------------
-  - based on android-msm-bullhead-3.10-nougat-mr0.6/android-7.0.0_r0.39
+  - based on android-msm-bullhead-3.10-nougat-mr1/android-7.1.1_r0.2
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -186,7 +187,7 @@ Device - Bullhead
   - add WiFi Display and Miracast support
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Device specific changes - Shamu
+Device specific changes - Shamu (no 7.1.1 drop yet...)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Kernel - Shamu
