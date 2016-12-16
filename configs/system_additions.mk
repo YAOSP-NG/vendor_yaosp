@@ -40,3 +40,5 @@ PRODUCT_BOOT_JARS += \
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
+
+$(call inherit-product-if-exists, vendor/nexus/prebuilt/prebuilt.mk)
