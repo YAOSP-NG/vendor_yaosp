@@ -19,8 +19,8 @@ if [ "$1" != "" ]; then
     tar cvf kernel.tar kernel
     tar cvf manifest.tar manifest
     tar cvf packages_apps_masquerade.tar packages/apps/masquerade
-    tar cvf prebuilts_gcc_linux-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
-    tar cvf prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8
+#    tar cvf prebuilts_gcc_linux-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+#    tar cvf prebuilts_gcc_darwin-x86_arm_arm-eabi-4.8.tar prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8
 #    tar cvf system_extras_su.tar system/extras/su
     tar cvf vendor.tar vendor
     mv $src_pwd/*.tar $dst_pwd
