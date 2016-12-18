@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.50 - 10/12/2016
+YAOSP-NG Changelog 0.51 - 16/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
@@ -103,6 +103,7 @@ Features
   - packageinstaller : show current and new version (may be overwritten by gapps)
   - art, bionic, external_skia optimizations
   - Batterystats: never show unnacounted and over-counted
+  - Dynamically tell the user which vendor image is needed
 
 Flasher ZIP
 -----------
@@ -187,7 +188,7 @@ Device - Bullhead
   - add WiFi Display and Miracast support
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Device specific changes - Shamu (no 7.1.1 drop yet...)
+Device specific changes - Shamu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Kernel - Shamu
@@ -253,11 +254,59 @@ Device specific changes - Hammerhead
 
 Kernel - Hammerhead
 -------------------
-  - 
+  - based on android-msm-hammerhead-3.4-marshmallow-mr3/android-6.0.1_r0.134
+  - XZ kernel compression
+  - /proc/config.gz support
+  - Westwood TCP congestion control default
+  - Powersuspend v1.5 (faux123 / Yank555.lu)
+  - IntelliPlug v4.0 (faux123)
+  - IntelliThermal v2 (faux123)
+  - FauxSound v3.6 (faux123)
+  - Async fsync by htc (through faux123)
+  - dynamix fsync v1.5 (faux123)
+  - KCAL support
+  - LiveDisplay support
+  - FIOPS I/O scheduler (port by faux123)
+  - Zen I/O scheduler
+  - exfat support (through Samsung)
+  - CPU overclocking (faux123)
+  - Yankactive governor (Yank555.lu)
+  - Yankdemand governor (Yank555.lu)
+  - Intellimm governor (faux123)
+  - simple GPU algorithm (faux123)
+  - fastcharge (Yank555.lu)
+  - zswap support (faux123)
+  - CPU Hardlimit v2.2 (Yank555.lu)
+  - kexec hardboot support (aka. Multi-ROM)
+  - fix fs/pipe.c related exploit (CVE-2015-1805)
+  - fix quadrooter (CVE-2016-5340)
 
 Device - Hammerhead
 -------------------
-  - 
+  - enable doze power saving mode
+  - enable all 2.4/5GHz channels (Yank555.lu)
+  - revert dm-verity
+  - add functionality to enable/disable double-tap wake gesture in Display Settings
+  - Setup Yank555.lu kernel
+      - Enable Simple GPU algorithm
+      - Configure cpufreq Hardlimit driver
+          - Screen on  CPU min/max : 300MHz / 2.3GHz
+          - Screen off CPU min/max : 300MHz / 1.5GHz
+          - Wakeup kick            : 2.0GHz for 2 secs
+          - Touchboost lo/hi       : 883MHz / 1.3GHz
+          -     duration/switch    : 750 msec  / 3 touches for lo -> hi
+          - DVFS userspace lockout : ignore
+      - Setup CPU governor (intellimm)
+      - IntelliPlug (mpdecision disabled)
+      - IntelliThermal (thermal-engine disabled)
+      - Vibrator strength set to 63% (as compared to 100% stock)
+      - fiops I/O scheduler / 1024Kb readahead buffer
+      - 768Mb zswap
+      - fastcharge : usb 1000mA/h / ac 1800mA/h
+  - add notification and battery light
+  - add native init.d support
+  - consider charging fast above 1100mA/h instead of 1500mA/h
+  - enable all 2.4GHz and 5GHz channels in any case
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Flounder
