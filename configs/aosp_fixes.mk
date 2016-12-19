@@ -27,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter shamu,$(PRODUCT_DEVICE)),)
+ifneq ($(filter shamu hammerhead,$(PRODUCT_DEVICE)),)
 PRODUCT_COPY_FILES += \
     vendor/yaosp/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Camera Effects for devices without a vendor partition
-ifneq ($(filter shamu,$(PRODUCT_DEVICE)),)
+ifneq ($(filter shamu hammerhead,$(PRODUCT_DEVICE)),)
 PRODUCT_COPY_FILES +=  \
     vendor/yaosp/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/yaosp/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
