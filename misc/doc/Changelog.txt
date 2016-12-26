@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.51 - 16/12/2016
+YAOSP-NG Changelog 0.52 - 26/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
@@ -26,6 +26,7 @@ Settings
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
   - Battery - Battery Saver : add additional steps (10%, 20%, 25%)
+  - Gestures : add double-press power to start camera switch
   - Security : Quick unlock (only works for 4-digit PINs to avoid lockout)
   - Security : Show/hide battery info on lockscreen when charging (current, voltage and temperature)
   - Language & input - PowerMenu : customize global menu
@@ -45,11 +46,8 @@ Settings
   - Developer options : Long press back to kill foreground app
   - Developer options : customize device hostname
   - SystemUI Tuner : always show
-  - SystemUI Tuner - Status bar : fix battery % not sticking
-  - SystemUI Tuner - Status bar : fix clock show seconds not sticking
-  - SystemUI Tuner - Night mode : fix on/off not always working
-  - SystemUI Tuner - Night mode : improve UX for tint/brightness "at least one enabled"
-  - SystemUI Tuner - Navigation bar : added more buttons (power, menu big, ime left/right, Search)
+  - SystemUI Tuner - Battery icon : add battery icon settings
+  - SystemUI Tuner - Navigation bar : add more buttons (power, menu big, ime left/right, Search)
   - About phone : show hardware and processor info
   - About phone : show memory info
   - About phone : show current vendor info (for devices with vendor partition)
@@ -132,6 +130,7 @@ Kernel - Angler
   - use high priority workqueue for devfreq and synaptics
   - add system wide power efficient workqueues
   - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
+  - cpuidle: don't disable cpuidle when entering suspend
 
 Device - Angler
 ---------------
@@ -173,6 +172,8 @@ Kernel - Bullhead
   - kgsl: convert some workqueues to use kthreads
   - mdss: move vsync_retire_work_handler to kthread
   - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
+  - cpuidle: don't disable cpuidle when entering suspend
+  - drivers: power: Fix 2% battery level drop
 
 Device - Bullhead
 -----------------
