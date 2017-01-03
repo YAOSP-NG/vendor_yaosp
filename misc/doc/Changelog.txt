@@ -1,12 +1,12 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.52 - 26/12/2016
+YAOSP-NG Changelog 0.53 - xx/12/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
 
 Settings
 --------
-  - More : statusbar network indicators
+  - More : statusbar network indicators (with option to animate arrows with network activity)
   - More - Mobile Networks - toggle to show/hide data connection in signal icon when roaming (instead of "R")
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
@@ -29,6 +29,7 @@ Settings
   - Gestures : add double-press power to start camera switch
   - Security : Quick unlock (only works for 4-digit PINs to avoid lockout)
   - Security : Show/hide battery info on lockscreen when charging (current, voltage and temperature)
+  - Security : Show voice assist or phone shortcut on lockscreen (bottom left)
   - Language & input - PowerMenu : customize global menu
                                    (power, reboot, screenshot, screenrecord, torch, airplane,
                                     users, settings, lockdown, assist, voiceassist, silent   )
@@ -72,7 +73,7 @@ Features
   - system update disabled
   - icons updated to material design (might still have missed some...)
   - disable AOSP recovery overwriting on boot
-  - ad-blocking hosts file (2016-02-08)
+  - ad-blocking hosts file (2016-12-10)
   - updated apns-config
   - use Nexus audio files
   - personalized YAOSP boot animation
