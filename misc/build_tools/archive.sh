@@ -11,11 +11,13 @@ echo "----------------------------------------------"
 if [ "$1" != "" ]; then
   if [ "$2" != "" ]; then
     cd $src_pwd
+    tar cvf device_lge_hammerhead.tar device/lge/hammerhead
     tar cvf external_busybox.tar external/busybox
 #    tar cvf external_exfat.tar external/exfat
 #    tar cvf external_fuse.tar external/fuse
 #    tar cvf external_ntfs-3g.tar external/ntfs-3g
 #    tar cvf frameworks_opt_cards.tar frameworks/opt/cards
+    tar cvf hardware_qcom_msm8x74.tar hardware/qcom/msm8x74
     tar cvf kernel.tar kernel
     tar cvf manifest.tar manifest
     tar cvf packages_apps_masquerade.tar packages/apps/masquerade
