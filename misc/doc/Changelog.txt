@@ -1,12 +1,12 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.52 - 26/12/2016
+YAOSP-NG Changelog 0.60 - 04/01/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on AOSP 7.1.1_r4 NMF26O (synced on 20161206 13:46 CET)
+Based on AOSP 7.1.1_r12 NMF26O (synced on 20170104 11:03 CET)
 
 Settings
 --------
-  - More : statusbar network indicators
+  - More : statusbar network indicators (with option to animate arrows with network activity)
   - More - Mobile Networks - toggle to show/hide data connection in signal icon when roaming (instead of "R")
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
@@ -29,6 +29,7 @@ Settings
   - Gestures : add double-press power to start camera switch
   - Security : Quick unlock (only works for 4-digit PINs to avoid lockout)
   - Security : Show/hide battery info on lockscreen when charging (current, voltage and temperature)
+  - Security : Show voice assist or phone shortcut on lockscreen (bottom left)
   - Language & input - PowerMenu : customize global menu
                                    (power, reboot, screenshot, screenrecord, torch, airplane,
                                     users, settings, lockdown, assist, voiceassist, silent   )
@@ -72,7 +73,7 @@ Features
   - system update disabled
   - icons updated to material design (might still have missed some...)
   - disable AOSP recovery overwriting on boot
-  - ad-blocking hosts file (2016-02-08)
+  - ad-blocking hosts file (2016-12-10)
   - updated apns-config
   - use Nexus audio files
   - personalized YAOSP boot animation
@@ -92,6 +93,8 @@ Features
   - show icon of package associated with Toast
   - battery-light : only show full when battery is done charging (instead of at 90%)
   - DeskClock removed from build, use the one from PlayStore
+  - Music removed from build, use your prefered player from PlayStore
+  - Browser2 removed from build, use your prefered browser from PlayStore
   - added QS tiles (Ambient Display, Sync, Music, ADB over network, USB tether, Screenshot,
                     Caffeine, Brightness, Reboot/Recovery, IME selector, Sound, 3-way DND,
                     Expanded desktop)
@@ -114,7 +117,7 @@ Device specific changes - Angler
 
 Kernel - Angler
 ---------------
-  - based on android-msm-angler-3.10-nougat-mr1/android-7.1.1_r0.3
+  - based on android-msm-angler-3.10-nougat-mr1.1/android-7.1.1_r0.18
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -155,7 +158,7 @@ Device specific changes - Bullhead
 
 Kernel - Bullhead
 -----------------
-  - based on android-msm-bullhead-3.10-nougat-mr1/android-7.1.1_r0.2
+  - based on android-msm-bullhead-3.10-nougat-mr1.1/android-7.1.1_r0.17
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
