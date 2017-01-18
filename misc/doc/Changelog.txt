@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.61 - 14/01/2016
+YAOSP-NG Changelog 0.62 - 18/01/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r12 NMF26O (synced on 20170104 11:03 CET)
@@ -15,7 +15,7 @@ Settings
   - Display : Expanded Desktop
   - Display : toggle to wake device when charger is un-/plugged
   - Display : toggle to prevent accidental wakeup when pressing the power button (aka. Proxiwake)
-  - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze)
+  - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze, dt2d)
   - Notifications - Settings menu icon : notification light (per-app)
   - Notifications - Settings menu icon : battery light (separate color for slow/fast charging)
   - Sound : increasing ring feature
@@ -135,6 +135,9 @@ Kernel - Angler
   - add system wide power efficient workqueues
   - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
   - cpuidle: don't disable cpuidle when entering suspend
+  - selinux: Improve avc logging (add uid)
+  - USB: android: Fix memory leak in mass_storage_function_init()
+  - proc: much faster /proc/vmstat
 
 Device - Angler
 ---------------
@@ -178,6 +181,9 @@ Kernel - Bullhead
   - Process haptics asynchronously to speed up wake when waking with fingerprint sensor
   - cpuidle: don't disable cpuidle when entering suspend
   - drivers: power: Fix 2% battery level drop
+  - selinux: Improve avc logging (add uid)
+  - USB: android: Fix memory leak in mass_storage_function_init()
+  - proc: much faster /proc/vmstat
 
 Device - Bullhead
 -----------------
@@ -225,6 +231,8 @@ Kernel - Shamu
   - fix fs/pipe.c related exploit (CVE-2015-1805)
   - fix quadrooter (CVE-2016-5340/CVE-2016-2059)
   - fix dirtycow (CVE-2016-5195)
+  - input: atmel_mxt_ts_mmi: Use wakeup key instead of power key for dt2w
+    (makes shamu compatible with double-tap-to-doze)
 
 Device - Shamu
 --------------
