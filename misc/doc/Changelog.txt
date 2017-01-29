@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.63 - 24/01/2016
+YAOSP-NG Changelog 0.64 - 29/01/2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r12 NMF26O (synced on 20170104 11:03 CET)
@@ -15,7 +15,8 @@ Settings
   - Display : Expanded Desktop
   - Display : toggle to wake device when charger is un-/plugged
   - Display : toggle to prevent accidental wakeup when pressing the power button (aka. Proxiwake)
-  - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze, dt2d)
+  - Display - Ambient Display options : advanced doze options (SlimDoze, incl. dt2w on doze, dt2d,
+                                                               fade in/out delays, timeout...)
   - Notifications - Settings menu icon : notification light (per-app)
   - Notifications - Settings menu icon : battery light (separate color for slow/fast charging)
   - Sound : increasing ring feature
@@ -45,6 +46,7 @@ Settings
   - Developer options - Window animation scale : set between 0x and 10x in 0.1 steps
   - Developer options - Transition animation scale : set between 0x and 10x in 0.1 steps
   - Developer options - Animator duration scale : set between 0x and 10x in 0.1 steps
+  - Developer options : Enable paging in recents
   - Developer options : Long press back to kill foreground app
   - Developer options : customize device hostname
   - SystemUI Tuner : always show
