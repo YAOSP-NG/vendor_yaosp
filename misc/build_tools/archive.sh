@@ -34,6 +34,12 @@ if [ "$1" != "" ]; then
     echo "Source      : $src_pwd"
     echo "Destination : $dst_pwd"
     ls -al $dst_pwd/*.tar
+    echo " "
+    echo "Do not forget to delete the following repos :"
+    echo " "
+    echo " rm -rf $dst_pwd/packages/apps/DeskClock"
+    echo " rm -rf $dst_pwd/packages/apps/Music"
+    echo " rm -rf $dst_pwd/packages/apps/Browser2"
     exit
   fi
 fi
