@@ -17,10 +17,10 @@ include vendor/yaosp/configs/system_additions.mk
 
 # Add YAOSP version as build prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.yaosp.version=0.64 \
-    ro.yaosp.branch=7.1.1_r12 \
-    ro.yaosp.buildbase=N4F26M \
-    ro.yaosp.builddate=2017-01-29
+    ro.yaosp.version=1.00 \
+    ro.yaosp.branch=7.1.1_r14 \
+    ro.yaosp.buildbase=N4F26O \
+    ro.yaosp.builddate=2017-02-07
 
 # Include OMS (Substratum)
 PRODUCT_PROPERTY_OVERRIDES += \

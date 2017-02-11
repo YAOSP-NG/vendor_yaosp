@@ -1,8 +1,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 0.64 - 29/01/2016
+YAOSP-NG Changelog 1.00 - 07/02/2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on AOSP 7.1.1_r12 NMF26O (synced on 20170104 11:03 CET)
+Based on AOSP 7.1.1_r14 N4F26O (synced on 20170207 17:59 CET)
 
 Settings
 --------
@@ -69,7 +69,7 @@ Features
   - All added features are completely translated into french
   - All added features are completely translated into german
   - All added features are completely translated into russian (Victor Lapin)
-  - Settings features are completely translated into hungarian (Gondos Lehel)
+  - All added features are completely translated into hungarian (Gondos Lehel)
   - gapps patches
   - Keep Google services enabled to avoid excessive wakeups during screen off
   - various SELinux fixes
@@ -108,6 +108,7 @@ Features
   - art, bionic, external_skia optimizations
   - Batterystats: never show unnacounted and over-counted
   - Dynamically tell the user which vendor image is needed
+  - add Running Services shortcut icon to notification/qs panel
 
 Flasher ZIP
 -----------
