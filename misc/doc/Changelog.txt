@@ -1,5 +1,5 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 1.00 - 07/02/2017
+YAOSP-NG Changelog 1.01 - 19/02/2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on AOSP 7.1.1_r14 N4F26O (synced on 20170207 17:59 CET)
@@ -8,6 +8,7 @@ Settings
 --------
   - More : statusbar network indicators (with option to animate arrows with network activity)
   - More - Mobile Networks - toggle to show/hide data connection in signal icon when roaming (instead of "R")
+  - Display - show/hide brightness slider in QS panel
   - Display - Rotation : allow 0, 90, 180, 270 degrees & lockscreen rotation
   - Display - Double tap to sleep : on NavBar / anywhere on lockscreen
   - Display - Font size : allow settings size in 5% steps from 80% to 130%
@@ -21,8 +22,10 @@ Settings
   - Notifications - Settings menu icon : battery light (separate color for slow/fast charging)
   - Sound : increasing ring feature
   - Sound : toggle to reorient volume rockers according to screen rotation
+  - Sound : toggle for volume rocker wake
   - Sound - Other sounds : Charging sounds (fixed)
   - Sound - Other sounds : Charging vibration
+  - Sound - Other sounds : Camera shutter sound
   - Apps : add fastscroll (scrollbar) to application list
   - Apps - Application Info : show package name
   - Apps - Application Info : open app when clicking on icon
@@ -84,7 +87,7 @@ Features
   - include phh superuser in /system/xbin/su for better support of root apps
       install the phh superuser app from Playstore !
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
-  - OMS/Substratum support updated to OMS7-N @ 2016-01-13 / masquerade updated to release 20P
+  - OMS/Substratum support updated to OMS7-N @ 2017-02-13 / masquerade updated to release 20P
   - arise/v4a support in SELinux enforcing mode (you need to flash the mod)
   - smooth spinners in non holo apps
   - don't refresh UI when screen is off
@@ -100,7 +103,7 @@ Features
   - Browser2 removed from build, use your prefered browser from PlayStore
   - added QS tiles (Ambient Display, Sync, Music, ADB over network, USB tether, Screenshot,
                     Caffeine, Brightness, Reboot/Recovery, IME selector, Sound, 3-way DND,
-                    Expanded desktop, Advanced location)
+                    Expanded desktop, Advanced location, screen off, compass)
   - added QS tile option for 3,4,5 tiles per row
   - add download speed and eta to expanded download provider notification
   - frameworks_av optimizations
@@ -109,6 +112,7 @@ Features
   - Batterystats: never show unnacounted and over-counted
   - Dynamically tell the user which vendor image is needed
   - add Running Services shortcut icon to notification/qs panel
+  - fix audio on WiFi-Display (untested)
 
 Flasher ZIP
 -----------
@@ -263,6 +267,7 @@ Device - Shamu
   - disable Qualcomm's battery current limit hack
     (avoids putting device to dualcore on 36° temp or unstable battery current, nice idea
      but didn't help with the shutdown issues at all, just crippled performance)
+  - fix speakerphone echo problem
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Hammerhead
