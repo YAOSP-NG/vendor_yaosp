@@ -22,6 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.yaosp.buildbase=N4F26O \
     ro.yaosp.builddate=2017-02-19
 
+# Include OMS (Substratum)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.substratum.verified=true
+
 # Use ad-blocking hosts file
 PRODUCT_COPY_FILES += \
     vendor/yaosp/prebuilt/etc/hosts:system/etc/hosts
