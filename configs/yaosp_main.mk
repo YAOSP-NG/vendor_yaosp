@@ -42,3 +42,7 @@ PRODUCT_PACKAGES += \
 # Build Busybox
 PRODUCT_PACKAGES += \
     Busybox
+
+# Include OMS (Substratum)
+PRODUCT_PACKAGES += \
+    ThemeInterfacer
