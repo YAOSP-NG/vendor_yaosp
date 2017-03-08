@@ -1,8 +1,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-YAOSP-NG Changelog 1.01 - 19/02/2017
+YAOSP-NG Changelog 1.10 - 07/03/2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on AOSP 7.1.1_r14 N4F26O (synced on 20170207 17:59 CET)
+Based on AOSP 7.1.1_r24 N4F26T (synced on 20170307 12:45 CET)
 
 Settings
 --------
@@ -87,7 +87,8 @@ Features
   - include phh superuser in /system/xbin/su for better support of root apps
       install the phh superuser app from Playstore !
       (https://play.google.com/store/apps/details?id=me.phh.superuser&hl=en)
-  - OMS/Substratum support updated to OMS7-N @ 2017-02-13 / masquerade updated to release 20P
+  - OMS/Substratum rootless support updated to OMS7-N @ 2017-03-08
+    ThemeInterfacer updated to release 50
   - arise/v4a support in SELinux enforcing mode (you need to flash the mod)
   - smooth spinners in non holo apps
   - don't refresh UI when screen is off
@@ -125,7 +126,7 @@ Device specific changes - Angler
 
 Kernel - Angler
 ---------------
-  - based on android-msm-angler-3.10-nougat-mr1.1/android-7.1.1_r0.18
+  - based on android-msm-angler-3.10-nougat-mr1.1/android-7.1.1_r0.25
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -145,6 +146,7 @@ Kernel - Angler
   - selinux: Improve avc logging (add uid)
   - USB: android: Fix memory leak in mass_storage_function_init()
   - proc: much faster /proc/vmstat
+  - remove verifiedbootstate flag from /proc/cmdline (help pass safetynet)
 
 Device - Angler
 ---------------
@@ -169,7 +171,7 @@ Device specific changes - Bullhead
 
 Kernel - Bullhead
 -----------------
-  - based on android-msm-bullhead-3.10-nougat-mr1.1/android-7.1.1_r0.17
+  - based on android-msm-bullhead-3.10-nougat-mr1.1/android-7.1.1_r0.47
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
@@ -191,6 +193,7 @@ Kernel - Bullhead
   - selinux: Improve avc logging (add uid)
   - USB: android: Fix memory leak in mass_storage_function_init()
   - proc: much faster /proc/vmstat
+  - remove verifiedbootstate flag from /proc/cmdline (help pass safetynet)
 
 Device - Bullhead
 -----------------
@@ -211,13 +214,14 @@ Device specific changes - Shamu
 
 Kernel - Shamu
 --------------
-  - based on android-msm-shamu-3.10-nougat-mr0.5/android-7.0.0_r0.35
+  - based on android-msm-shamu-3.10-nougat-mr1.5/android-7.1.1_r0.49
   - XZ kernel compression
   - /proc/config.gz support
   - Westwood TCP congestion control default
   - Powersuspend v1.7 (faux123 / Yank555.lu)
   - IntelliPlug v4.0 (faux123)
   - IntelliThermal (faux123)
+  - Intellimm governor (faux123 / yank555.lu)
   - FauxSound v3.6 (faux123)
   - Async fsync by htc (through faux123 / imoseyon)
   - KCAL support (via imoseyon)
@@ -260,6 +264,7 @@ Device - Shamu
       - Setup CPU governor
       - IntelliPlug (mpdecision disabled)
       - IntelliThermal (thermal-engine disabled)
+      - Intellimm governor
       - Vibrator strength set to 63% (as compared to 100% stock)
       - Display set to calibrated 6500K color temperature
       - fiops I/O scheduler / 1024Kb readahead buffer
