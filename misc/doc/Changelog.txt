@@ -340,11 +340,25 @@ Device specific changes - Flounder
 
 Kernel - Flounder
 -----------------
-  - 
+  - based on android-tegra-flounder-3.10-nougat-mr1.1/android-7.1.1_r0.24
+  - XZ kernel compression
+  - /proc/config.gz support
+  - Westwood TCP congestion control default
+  - FIOPS I/O scheduler
+  - fix CVE-2015-1805
+      https://source.android.com/security/advisory/2016-03-18.html
+  - fix /proc/cpuinfo
 
 Device - Flounder
 -----------------
-  - 
+  - enable doze power saving mode
+  - enable Ambient Display
+  - Make encryption optional in fstab
+  - revert dm-verity
+  - increase swap to 768Mb
+  - default to fiops I/O scheduler / 1024Kb readahead buffer
+  - add notification light
+    (dimming is not possible, only white, this is a device limitiation)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Device specific changes - Flo
