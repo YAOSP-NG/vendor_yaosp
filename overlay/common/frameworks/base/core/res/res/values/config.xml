@@ -85,4 +85,10 @@
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
+
+    <!-- disabled til used ime packages -->
+    <string-array name="config_disabledUntilUsedPreinstalledImes">
+        <item>com.google.android.inputmethod.latin</item>
+        <item>com.android.inputmethod.latin</item>
+    </string-array>
 </resources>
