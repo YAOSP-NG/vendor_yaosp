@@ -16,4 +16,5 @@
 PRODUCT_PACKAGES += \
     NexusLauncherIcons \
     WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt
+    NexusLauncherPrebuilt \
+    Turbo
