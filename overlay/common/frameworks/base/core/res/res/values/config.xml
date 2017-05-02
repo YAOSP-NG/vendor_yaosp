@@ -91,4 +91,8 @@
         <item>com.google.android.inputmethod.latin</item>
         <item>com.android.inputmethod.latin</item>
     </string-array>
+
+    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
+         handle wallpaper cropping. -->
+    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
 </resources>
